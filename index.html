@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="heading">
+            <h1 id="title">Example Survey Form</h1>
+            <p id="description">This is an example survey form</p>
+        </div>
+    
+        <div class="main-content">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label id="number-label" for="number">Age</label>
+                    <input type="number" name="number" id="number" class="form-control" min="10" max="99" placeholder="Age" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="dropdown">Dropdown</label>
+                    <select name="dropdown" id="dropdown" class="form-control">
+                        <option disabled selected>Select an option</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="radio">Radio</label>
+                    <div>
+                        <input type="radio" name="radio" id="radio1" value="radio1">
+                        <label for="radio1">Radio 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio" id="radio2" value="radio2">
+                        <label for="radio2">Radio 2</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio" id="radio3" value="radio3">
+                        <label for="radio3">Radio 3</label>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="checkbox">Checkbox</label>
+                    <div>
+                        <input type="checkbox" name="checkbox" id="checkbox1" value="checkbox1">
+                        <label for="checkbox1">Checkbox 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="checkbox" id="checkbox2" value="checkbox2">
+                        <label for="checkbox2">Checkbox 2</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="checkbox" id="checkbox3" value="checkbox3">
+                        <label for="checkbox3">Checkbox 3</label>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="textarea">Textarea</label>
+                    <textarea name="textarea" id="textarea" rows="3" class="form-control"></textarea>
+                </div>
+        
+                <button type="submit" id="submit">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
